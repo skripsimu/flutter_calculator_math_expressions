@@ -7,4 +7,6 @@
  
  
  This is preview of this app
- ![Screenshot_20190917-014418](https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg){:height="24px" width="48px"}
+ ![Screenshot_20190917-014418](https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg){:height="50%" width="50%"}
+ 
+ ![Screenshot_20190917-014418](https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg){:height="700px" width="400px"}
