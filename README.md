@@ -7,5 +7,4 @@
  
  
  This is preview of this app
- ![Screenshot_20190917-014418](https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg)
- <img src="https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg" width="300" height="700">
+ <img src="https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg" width="300" height="600">
