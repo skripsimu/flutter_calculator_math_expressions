@@ -71,7 +71,7 @@ class _CalculatorState extends State<Calculator> {
                       children: <Widget>[
                         Text("Your Result"),
                         SizedBox(height: 10,),
-                        Text(_result, style: TextStyle(fontSize: 42),),
+                        Text(_result, style: TextStyle(fontSize: 36),),
                       ],
                     ),
                   ),
