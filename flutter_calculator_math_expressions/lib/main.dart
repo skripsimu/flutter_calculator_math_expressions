@@ -8,14 +8,6 @@ class CalcApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.red,
-        accentColor: Colors.cyan[600],
-        appBarTheme: AppBarTheme(
-          color: Colors.red,
-        ),
-      ),
       home: Scaffold(
         body: Calculator(),
       ),
@@ -33,7 +25,6 @@ class _CalculatorState extends State<Calculator> {
   String _result;
   void _calc(String string1){
     setState(() {
-      print("aaaaaaaaaaaaaaa" + string1);
       Parser p = new Parser();
       Expression exp = p.parse(string1);
       String result = exp.evaluate(EvaluationType.REAL, null).toString();  // if context is not available replace it with null.
@@ -78,7 +69,7 @@ class _CalculatorState extends State<Calculator> {
                     height: 90.0,
                     child: Column(
                       children: <Widget>[
-                        Text("Hasil Penghitungan"),
+                        Text("Your Result"),
                         SizedBox(height: 10,),
                         Text(_result, style: TextStyle(fontSize: 42),),
                       ],
