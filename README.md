@@ -8,4 +8,4 @@
  
  This is preview of this app
  <br>
- <img src="https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg" width="300" height="500">
+ <img src="https://user-images.githubusercontent.com/35763779/64984880-ea398e00-d8ed-11e9-8d08-81f55b51e763.jpg" width="250" height="500">
