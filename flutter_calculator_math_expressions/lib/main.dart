@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-void main() => runApp(CalcApp());
+void main() {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(CalcApp());
+}
 
 class CalcApp extends StatelessWidget {
   @override
@@ -22,12 +25,14 @@ class Calculator extends StatefulWidget {
 
 class _CalculatorState extends State<Calculator> {
   TextEditingController _calController = new TextEditingController();
-  String _result;
-  void _calc(String string1){
+  String _result = "";
+  void _calc(String string1) {
     setState(() {
       Parser p = new Parser();
       Expression exp = p.parse(string1);
-      String result = exp.evaluate(EvaluationType.REAL, null).toString();  // if context is not available replace it with null.
+      String result = exp
+          .evaluate(EvaluationType.REAL, null)
+          .toString(); // if context is not available replace it with null.
       print(result);
       setState(() {
         _result = result;
@@ -35,6 +40,7 @@ class _CalculatorState extends State<Calculator> {
       });
     });
   }
+
   Widget _bodyCalc(BuildContext context) {
     return ListView(
       children: <Widget>[
@@ -55,8 +61,7 @@ class _CalculatorState extends State<Calculator> {
             top: 140,
             left: 10,
             right: 10,
-            child:
-            Container(
+            child: Container(
               height: 300,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -70,8 +75,13 @@ class _CalculatorState extends State<Calculator> {
                     child: Column(
                       children: <Widget>[
                         Text("Your Result"),
-                        SizedBox(height: 10,),
-                        Text(_result, style: TextStyle(fontSize: 36),),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          _result,
+                          style: TextStyle(fontSize: 36),
+                        ),
                       ],
                     ),
                   ),
@@ -86,8 +96,14 @@ class _CalculatorState extends State<Calculator> {
                       ),
                     ),
                   ),
-                  Container(child: Divider(thickness: 2,
-                      color: Colors.blue[800],), padding: EdgeInsets.only(left: 20.0,right: 20.0, bottom: 10.0),),
+                  Container(
+                    child: Divider(
+                      thickness: 2,
+                      color: Colors.blue[800],
+                    ),
+                    padding:
+                        EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
+                  ),
                 ],
               ),
             ),
@@ -115,10 +131,13 @@ class _CalculatorState extends State<Calculator> {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
-                  child: Text("CALC", style: TextStyle(color: Colors.white, fontSize: 18),),
+                  child: Text(
+                    "CALC",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
                 ),
               ),
-              onPressed: (){
+              onPressed: () {
                 _calc(_calController.text);
               },
             ),
