@@ -80,7 +80,7 @@ class _CalculatorState extends State<Calculator> {
                         ),
                         Text(
                           _result,
-                          style: TextStyle(fontSize: 36),
+                          style: TextStyle(fontSize: 22),
                         ),
                       ],
                     ),
